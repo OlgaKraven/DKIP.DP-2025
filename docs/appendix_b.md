@@ -18,7 +18,7 @@
 ## Пример последнего листа
 
 <iframe
-  src="../assets/files//Приложение 7.  Последний лист.pdf"
+  src="assets/files//Приложение 7.  Последний лист.pdf"
   width="100%"
   height="800px">
 </iframe>
