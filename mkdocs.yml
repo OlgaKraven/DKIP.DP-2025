@@ -1,0 +1,59 @@
+site_name: Методические рекомендации на ДП
+
+use_directory_urls: false
+
+theme:
+  name: material
+  logo: assets/icons/logo.png
+  favicon: assets/icons/logo.png
+  language: ru
+  features:
+    - content.code.copy     # кнопка "копировать"
+    - content.image.zoom    # zoom картинок
+    - navigation.top        # "наверх"
+    - navigation.tracking   # подсветка активного пункта в правом TOC
+    - toc.follow            # правый TOC следует за прокруткой
+
+plugins:
+  - glightbox
+  - search
+
+nav:
+    - Главная: index.md
+    - Оглавление: toc.md
+    - Введение: introduction.md
+    - Глава 1: chapter1.md
+    - Глава 2: chapter2.md
+    - Глава 3: chapter3.md
+    - Заключение: conclusion.md
+    - Список литературы: references.md
+    - Описания для приложений: appendices_description.md
+    - Дополнения: 
+        - Требование к оформлению: formatting_requirements.md
+        - Аннотация: appendix_a.md
+        - Последний лист: appendix_b.md
+        - Презентация: appendix_c.md
+
+    # Добавьте свои разделы и страницы здесь
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.tasklist
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - assets/js/mermaid-init.js
+
+extra_css:
+  - assets/stylesheets/extra.css
